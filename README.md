@@ -4,7 +4,7 @@ MaxClicks app.
 
 ## Project description
 
-MaxClicks is a simple click-app based on JS. Player has to get max clicks count possible and it will affect on his/her rank due to rank table. Current rank gives players info about who they would be in SW Universe. 'Max Clicks' was implemented to dive into SPA development using JS, but it's also fun to play app for anybody. Just try to get to 12 lvl!)
+MaxClicks is a simple click-app based on JS. Players have to get max clicks count possible and it will affect on their position in the rank table. Current rank gives players info about who they would be in SW Universe. 'Max Clicks' was implemented to dive into SPA development using JS, but it's also fun to play app for anybody. Just try to get to 12 lvl!)
 
 ## Project references
 
