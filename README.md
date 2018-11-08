@@ -18,17 +18,17 @@ MaxClicks is a simple click-app based on JS. Player has to get max clicks count 
 
 ## Tech stack
 
-* [Languages]:
-- ES6
-- HTML5
-- CSS3 (with SCSS)
+Languages:
+** [ES6]
+* [HTML5]
+* [CSS3 (with SCSS)]
 
-* [Frameworks]:
-- Bootstrap 4
+Frameworks:
+* [Bootstrap 4]
 
-* [Libraries]:
-- jQuery (for Bootstrap only)
+Libraries:
+* [jQuery (for Bootstrap only)]
 
-* [Additional]:
-- Google Fonts
-- Font Awesome
+Additional:
+* [Google Fonts]
+* [Font Awesome]
