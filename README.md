@@ -31,7 +31,7 @@ Libraries:
 
 # Roadmap
 1. Fix for offline issue (remanage paths for github pages). P.S. Offline works properly on the local server.
-2. Fix for webpack css compatibility.
+2. Fix for webpack @font-face compatibility.
 3. Rebuild app without bootstrap and/or make some magic with webpack configuration.
 4. Rebuild app achivements logic (disable level "skipping").
 5. Add new sound fxs for buttons and mouse movements.
