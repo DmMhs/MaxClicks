@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="./src/css/style.css">
+    <link rel="stylesheet" href="./bootstrap-4.1.3/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./src/fonts/fontawesome-free-5.4.2-web/css/all.css">
+</head>
+<body>
+    <i class="fas fa-bars"></i>
+    <i class="fas fa-info-circle"></i>
+    <div class="sidebar hidden">
+        <h2>Best result: <span id="max-result" class="sidebar__max-result"></span><i class="fas fa-recycle" id="reset"></i></h2>
+        <h3>Current rank: <span id="current-rank">Padawan </span><img id="rank-img" class="sidebar__rank-img"></h3>
+        <table class="sidebar__rank">
+          <tr class="sidebar__rank--achived sidebar__rank--unachived">
+            <th>level</th><th>clicks</th><th>rank</th><th>achived</th>
+          </tr>
+          <tr class="sidebar__rank--achived sidebar__rank--unachived">
+            <td>12</td><td>100</td><td>Summa-verminoth</td><td><span></span></td>
+          </tr>
+          <tr class="sidebar__rank--achived sidebar__rank--unachived">
+            <td>11</td><td>85</td><td>Yoda</td><td><span></span></td>
+          </tr>
+          <tr class="sidebar__rank--achived sidebar__rank--unachived">
+            <td>10</td><td>80</td><td>Vader</td><td><span></span></td>
+          </tr>
+          <tr class="sidebar__rank--achived sidebar__rank--unachived">
+            <td>9</td><td>70</td><td>Obi-Wan Kenobi</td><td><span></span></td>
+          </tr>
+          <tr class="sidebar__rank--achived sidebar__rank--unachived">
+            <td>8</td><td>65</td><td>General Grievous</td><td><span></span></td>
+          </tr>
+          <tr class="sidebar__rank--achived sidebar__rank--unachived">
+            <td>7</td><td>60</td><td>Han Solo</td><td><span></span></td>
+          </tr>
+          <tr class="sidebar__rank--achived sidebar__rank--unachived">
+            <td>6</td><td>55</td><td>Chewbacca</td><td><span></span></td>
+          </tr>
+          <tr class="sidebar__rank--achived sidebar__rank--unachived">
+            <td>5</td><td>50</td><td>Princess Leia</td><td><span></span></td>
+          </tr>
+          <tr class="sidebar__rank--achived sidebar__rank--unachived">
+            <td>4</td><td>45</td><td>Ewok</td><td><span></span></td>
+          </tr>
+          <tr class="sidebar__rank--achived sidebar__rank--unachived">
+            <td>3</td><td>40</td><td>R2D2</td><td><span></span></td>
+          </tr>
+          <tr class="sidebar__rank--achived sidebar__rank--unachived">
+            <td>2</td><td>30</td><td>C3-PO</td><td><span></span></td>
+          </tr>
+          <tr class="sidebar__rank--achived sidebar__rank--unachived">
+            <td>1</td><td>20</td><td>Imperial Stormtrooper</td><td><span></span></td>
+          </tr>
+          <tr class="sidebar__rank--achived sidebar__rank--current-level">
+            <td>0</td><td>0</td><td>Padawan</td><td><span></span></td>
+          </tr>
+        </table>
+    </div>
+    <div id="vol">
+      <i class="fas fa-volume-up"></i>
+    </div>
+    <div id="mute" class="hidden">
+      <i class="fas fa-volume-mute"></i>
+    </div>
+    <div class="info-section hidden">
+      <h3>Goals</h3>
+        <ol>
+          <li>Get max clicks count possible to ...</li>
+          <li>... see who you are in Star Wars universe!</li>
+        </ol>
+      <h3>Mouse/Tap Navigation</h3>
+      <ol>
+        <li>Click/Tap <span class="info-section--bold">Start</span> to run countdown.</li>
+        <li>Click/Tap <span class="info-section--bold">Go</span> as much times as you can!</li>
+        <li>Click/Tap <span class="info-section--bold">Burger</span> icon (top right corner) to checkout your current rank.</li>
+        <li>Click/Tap <span class="info-section--bold">Volume</span> icon to mute/unmute click sound.</li>
+      </ol>
+      <h3>Keybord Navigation</h3>
+      <ol>
+        <li>Press <span class="info-section--bold">Enter</span> to run countdown.</li>
+        <li>Press <span class="info-section--bold">Spacebar</span> as much times as you can!</li>
+        <li>Press <span class="info-section--bold">R</span> to show/hide rank info.</li>
+        <li>Press <span class="info-section--bold">V</span> to mute/unmute click sound.</li>
+        <li>Press <span class="info-section--bold">I</span> to show/hide info section (this section).</li>
+      </ol>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+              <div class="app">
+                <h2>Max cliks: <span id="max-clicks"></span></h2>
+                <div class="app__timer"><span id="timer-count" class="app__timer-count"></span></div>
+                <h3>Current cliks: <span id="current-clicks"></span></h3>
+                <div id="btn-start" class="app__button app__btn-start app--on-top">Start</div>
+                <div id="btn-go" class="app__button app__btn-go">Go!</div>
+                <audio id="audio" preload="auto" src="./src/sound/blaster2.mp3"></audio>
+              </div>
+            </div>
+        </div>
+    </div>
+    <script src="./src/js/jquery-3.3.1.js"></script>
+    <script src="./bootstrap-4.1.3/js/bootstrap.min.js"></script>
+    <script type="module" src="./dist/bundle.js"></script>
+    <script>
+      if('serviceWorker' in navigator) {
+        navigator.serviceWorker.register('/sw.js').then(function(){
+          console.log("Service Worker Registered");
+          });
+      }
+  </script>
+</body>
+</html>

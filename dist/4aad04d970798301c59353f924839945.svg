@@ -1,0 +1,1 @@
+module.exports = __webpack_public_path__ + "fonts/open-sans-condensed-v12-latin-300.svg";
