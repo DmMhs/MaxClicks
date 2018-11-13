@@ -12,7 +12,7 @@ MaxClicks is a simple click app based on JS. Players have to get max clicks coun
 
 * [Front-camp “facebook” page](https://www.facebook.com/groups/270300106928894/)
 
-* [github pages](https://dmmhs.github.io/MaxClicks.io)
+* [github pages](https://dmmhs.github.io/MaxClicks/)
 
 * [mockups](https://wireframepro.mockflow.com/view/M378b133e7c4ded180a7a8efa5d5bbdc31539177628947#/page/58552349a09c49b2952697a17b0b9f91)
 
