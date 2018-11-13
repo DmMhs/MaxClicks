@@ -1,5 +1,3 @@
-importScripts('/cache-polyfill.js');
-
 self.addEventListener('install', function (e) {
   e.waitUntil(
     caches.open('maxClick-sw1').then(function (cache) {
