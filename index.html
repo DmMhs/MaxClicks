@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="./src/css/style.css">
     <link rel="stylesheet" href="./bootstrap-4.1.3/css/bootstrap.min.css">
     <link rel="stylesheet" href="./src/fonts/fontawesome-free-5.4.2-web/css/all.css">
+    <link rel="canonical" href="https://DmMhs.github.io/MaxClicks/" />
 </head>
 <body>
     <i class="fas fa-bars"></i>
@@ -107,7 +108,7 @@
     <script type="module" src="./dist/bundle.js"></script>
     <script>
       if('serviceWorker' in navigator) {
-        navigator.serviceWorker.register('/sw.js').then(function(){
+        navigator.serviceWorker.register('/MaxClicks/sw.js', {scope: '/MaxClicks/'}).then(function(){
           console.log("Service Worker Registered");
           });
       }
