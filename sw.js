@@ -4,8 +4,8 @@ self.addEventListener('install', function (e) {
   e.waitUntil(
     caches.open('maxClick-sw1').then(function (cache) {
       return cache.addAll([
-        '/',
-        '/index.html',
+        '/MaxClicks/',
+        '/MaxClicks/index.html',
         '/src/css/style.css',
         '/src/js/jquery-3.3.1.js',
         '/bootstrap-4.1.3/css/bootstrap.min.css',
