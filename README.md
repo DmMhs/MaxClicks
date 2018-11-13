@@ -30,7 +30,7 @@ Libraries:
 * jQuery (for Bootstrap only)
 
 # Roadmap
-1. Fix for offline issue (need to remanage paths for github pages) P.S. Offline works properly on the local server.
+1. Fix for offline issue (remanage paths for github pages). P.S. Offline works properly on the local server.
 2. Fix for webpack css compatibility.
 3. Rebuild app without bootstrap and/or make some magic with webpack configuration.
 4. Rebuild app achivements logic (disable level "skipping").
