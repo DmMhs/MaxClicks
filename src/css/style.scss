@@ -79,8 +79,8 @@
 
 .sidebar {
   position: absolute;
-  height: 100vh;
-  padding: 30px;
+  min-height: 100%;
+  padding: 15px 30px 30px 30px;
   color: white;
   background-color: rgba(51, 51, 51, 0.95);
   z-index: 100;
