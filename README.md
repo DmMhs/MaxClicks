@@ -30,7 +30,6 @@ Libraries:
 * jQuery (for Bootstrap only)
 
 # Roadmap
-1. Fix for webpack @font-face compatibility.
-2. Rebuild app without bootstrap and/or make some magic with webpack configuration.
-3. Rebuild app achivements logic (disable level "skipping").
-4. Add new sound fxs for buttons and mouse movements.
+
+1. Add new sound fxs for buttons and mouse movements.
+2. Add new share result functionality.
