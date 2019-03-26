@@ -31,5 +31,6 @@ Libraries:
 
 # Roadmap
 
-1. Add new sound fxs for buttons and mouse movements.
-2. Add new share result functionality.
+1. Remove webpack-related files from .gitignore
+2. Add new sound fxs for buttons and mouse movements.
+3. Add new share result functionality.
